@@ -1,0 +1,19 @@
+{
+  "name": "infinity-cl-subgraph",
+  "version": "1.0.0",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "codegen": "graph codegen --output-dir src/types/",
+    "build": "graph codegen --output-dir src/types/ && graph build",
+    "test": "graph test -d",
+    "test:ci": "graph test",
+    "auth:studio": "graph auth",
+    "deploy:studio": "graph deploy --studio infinity-cl-subgraph",
+    "deploy:goldsky": "goldsky subgraph deploy infinity-cl-subgraph/1.0.0 --path ."
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "0.98.1",
+    "@graphprotocol/graph-ts": "0.38.2",
+    "matchstick-as": "0.6.0"
+  }
+}

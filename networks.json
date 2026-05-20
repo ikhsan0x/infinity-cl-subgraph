@@ -1,0 +1,22 @@
+{
+  "base": {
+    "PoolManager": {
+      "address": "0xa0FfB9c1CE1Fe56963B0321B32E7A0302114058b",
+      "startBlock": 30544106
+    },
+    "PositionManager": {
+      "address": "0x55f4c8abA71A1e923edC303eb4fEfF14608cC226",
+      "startBlock": 30546518
+    }
+  },
+  "bsc": {
+    "PoolManager": {
+      "address": "0xa0FfB9c1CE1Fe56963B0321B32E7A0302114058b",
+      "startBlock": 47214308
+    },
+    "PositionManager": {
+      "address": "0x55f4c8abA71A1e923edC303eb4fEfF14608cC226",
+      "startBlock": 47215015
+    }
+  }
+}
