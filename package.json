@@ -5,10 +5,13 @@
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
     "build": "graph codegen --output-dir src/types/ && graph build",
+    "build:base": "graph codegen --output-dir src/types/ && graph build --network base",
+    "build:bsc": "graph codegen --output-dir src/types/ && graph build --network bsc",
     "test": "graph test -d",
     "test:ci": "graph test",
     "auth:studio": "graph auth",
-    "deploy:studio": "graph deploy --studio infinity-cl-subgraph",
+    "deploy:base": "npm run build:base && graph deploy --network base pancake-swap-infinity-cl-base",
+    "deploy:bsc": "npm run build:bsc && graph deploy --network bsc pancake-swap-infinity-cl-bsc",
     "deploy:goldsky": "goldsky subgraph deploy infinity-cl-subgraph/1.0.0 --path ."
   },
   "devDependencies": {
